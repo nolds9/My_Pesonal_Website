@@ -2,10 +2,12 @@
 <html>
   <head>
     <title>Mohamed Chalal</title>
-    <meta charset="utf8">
-    <link href="bootstrap.css" >
+    <meta charset="utf8"> <!-- NHO: html validator says it should "utf8-8" for the value of charset -->
+    <link href="bootstrap.css" > <!-- NHO: validator is showing that we are missing a required attribute, "rel" -->
     <link type="text/css" rel="stylesheet" href="bootstrap.css"/>
+  <!-- NHO: How could we practice seperation of concerns by moving our styles out of the html? -->
   <style>
+  /* NHO: be careful of indentation here */
   body{
     font: helvetica;
     color: #ffffff;
@@ -62,6 +64,7 @@ li{
       <img src="Mohamed_thumbnail.jpg" alt="PictueOfMohamed"/>
 
     <nav>
+      <!-- NHO: Proper html style guides recommend no more than 1 `h1` tag per page...  -->
       <h1>Summary</h1>
       <h1>Education</h1>
       <h1>WorkHistory</h1>
@@ -71,11 +74,13 @@ li{
         <h2>pos<span class="companyname">company name</span><span class="datesworked">dates</span></h2>
       <h1>Skills</h1>
     </nav>
+    <!-- NHO: Would include a proper heading for this section, maybe links    -->
       <ul>
         <li>Portfolio</li>
         <li></li>
         <li></li>
     </ul>
   </main>
+  <!-- NHO: Maybe include a footer with some links to social media / info about creator, etc...  -->
 </body>
 </html>
